@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+    <section class="challenge" id="desafio-3">
+        <h1>Verificador de idade</h1>
+ 
+      <div class="control-row">
+        <label for="idadeUsuario">Idade</label>
+        <input type="number" id="idadeUsuario" placeholder="Ex.: 18" min="0" />
+        <button id="btnVerificarIdade" type="button">Verificar idade</button>
+      </div>
+
+      <div id="resultadoIdade" class="result" aria-live="polite">Resultado da verificacao aparecera aqui.</div>
+    </section>
+
+        <section class="challenge" id="desafio-1">
+            <h1>Desafio 2 - Verificador de número</h1>
+            <p>Digite um número para identificar se ele é positivo, negativo ou zero.</p>
+ 
+            <div class="control-row">
+                <label for="numeroUsuario">Número</label>
+                <!-- Mudamos o type para "number" e o id para refletir a nova função -->
+                <input type="number" id="numeroUsuario" placeholder="Digite um número" />
+                <button id="btnVerificar" type="button">Verificar número</button>
+            </div>
+              <!-- Div para exibir o resultado da verificação -->
+            <div id="resultadoVerificacao" class="result" aria-live="polite">Resultado da verificação aparecerá aqui.
+            </div>
+        </section>
+ 
+    
+        <section class="challenge" id="desafio-3">
+            <h1>Atividade 3 - Aprovação do aluno</h1>
+            <p>Digite a nota do aluno para verificar a situação (Aprovado, Recuperação ou Reprovado).</p>
+ 
+            <div class="control-row">
+                <label for="notaAluno">Nota</label>
+                <input type="number" id="notaAluno" min="0" max="10" step="0.1" placeholder="Ex: 6" />
+                <button id="btnVerificarNota" type="button">Verificar situação</button>
+            </div>
+ 
+            <div id="resultadoNota" class="result" aria-live="polite">A situação do aluno aparecerá aqui.</div>
+        </section>
+ 
+    <section class="challenge" id="desafio-3">
+
+    <h1>Sistema de Prioridade</h1>
+
+    <label for="campoPrioridade">Digire a prioridade (urgente, alta, media, baixa):</label>
+    <br>
+    <input type="text" id="campoPrioridade">
+    <button onclick="verificarPrioridade()">Verificar</button>
+
+    <p id="resultado" class="result"></p>
+    
+    </section>
+
+    <script src="index.js" defer></script>
+    
+</body>
+</html>
