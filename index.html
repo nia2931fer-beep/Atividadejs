@@ -1,69 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    
+
 </head>
+
 <body>
 
-    <section class="challenge" id="desafio-3">
-        <h1>Verificador de idade</h1>
- 
-      <div class="control-row">
-        <label for="idadeUsuario">Idade</label>
-        <input type="number" id="idadeUsuario" placeholder="Ex.: 18" min="0" />
-        <button id="btnVerificarIdade" type="button">Verificar idade</button>
-      </div>
+    <section class="challenge" id="desafio-1">
+        <h2>Desafio 1 - Verificador de idade</h2>
 
-      <div id="resultadoIdade" class="result" aria-live="polite">Resultado da verificacao aparecera aqui.</div>
+        <div class="control-row">
+            <label for="idadeUsuario">Idade</label>
+            <input type="number" id="idadeUsuario" placeholder="Ex.: 18" min="0" />
+            <button id="btnVerificarIdade" type="button">Verificar idade</button>
+        </div>
+
+        <div id="resultadoIdade" class="result" aria-live="polite">Resultado da verificacao aparecera aqui.</div>
     </section>
 
-        <section class="challenge" id="desafio-1">
-            <h1>Desafio 2 - Verificador de número</h1>
-            <p>Digite um número para identificar se ele é positivo, negativo ou zero.</p>
- 
-            <div class="control-row">
-                <label for="numeroUsuario">Número</label>
-                <!-- Mudamos o type para "number" e o id para refletir a nova função -->
-                <input type="number" id="numeroUsuario" placeholder="Digite um número" />
-                <button id="btnVerificar" type="button">Verificar número</button>
-            </div>
-              <!-- Div para exibir o resultado da verificação -->
-            <div id="resultadoVerificacao" class="result" aria-live="polite">Resultado da verificação aparecerá aqui.
-            </div>
-        </section>
- 
-    
-        <section class="challenge" id="desafio-3">
-            <h1>Atividade 3 - Aprovação do aluno</h1>
-            <p>Digite a nota do aluno para verificar a situação (Aprovado, Recuperação ou Reprovado).</p>
- 
-            <div class="control-row">
-                <label for="notaAluno">Nota</label>
-                <input type="number" id="notaAluno" min="0" max="10" step="0.1" placeholder="Ex: 6" />
-                <button id="btnVerificarNota" type="button">Verificar situação</button>
-            </div>
- 
-            <div id="resultadoNota" class="result" aria-live="polite">A situação do aluno aparecerá aqui.</div>
-        </section>
- 
+    <section class="challenge" id="desafio-2">
+        <h2>Desafio 2 - Verificador de número</h2>
+        <p>Digite um número para identificar se ele é positivo, negativo ou zero.</p>
+
+        <div class="control-row">
+            <label for="numeroUsuario">Número</label>
+            <!-- Mudamos o type para "number" e o id para refletir a nova função -->
+            <input type="number" id="numeroUsuario" placeholder="Digite um número" />
+            <button id="btnVerificar" type="button">Verificar número</button>
+        </div>
+        <!-- Div para exibir o resultado da verificação -->
+        <div id="resultadoVerificacao" class="result" aria-live="polite">Resultado da verificação aparecerá aqui.
+        </div>
+    </section>
+
+
     <section class="challenge" id="desafio-3">
+        <h2>Desafio 3 - Aprovação do aluno</h2>
+        <p>Digite a nota do aluno para verificar a situação (Aprovado, Recuperação ou Reprovado).</p>
 
-    <h1>Sistema de Prioridade</h1>
+        <div class="control-row">
+            <label for="notaAluno">Nota</label>
+            <input type="number" id="notaAluno" min="0" max="10" step="0.1" placeholder="Ex: 6" />
+            <button id="btnVerificarNota" type="button">Verificar situação</button>
+        </div>
 
-    <label for="campoPrioridade">Digire a prioridade (urgente, alta, media, baixa):</label>
-    <br>
-    <input type="text" id="campoPrioridade">
-    <button onclick="verificarPrioridade()">Verificar</button>
+        <div id="resultadoNota" class="result" aria-live="polite">A situação do aluno aparecerá aqui.</div>
+    </section>
 
-    <p id="resultado" class="result"></p>
-    
+    <section class="challenge" id="desafio-4">
+
+        <h2>Desafio 4 - Sistema de Prioridade</h2>
+
+        <div>
+            <label for="campoPrioridade">Digire a prioridade (urgente, alta, media, baixa):</label>
+            <br>
+            <input type="text" id="campoPrioridade">
+            <button onclick="verificarPrioridade()">Verificar</button>
+        </div>
+
+        <p id="resultado" class="result">Resultado da verificação aparecerá aqui.</p>
+
+    </section>
+
+    <section class="challenge" id="desafio-5">
+        <h2>Desafio 5 - Tarefa atrasada</h2>
+
+        <div class="control-row">
+            <label for="tarefasAtrasadas">Digite sua tarefa </label>
+            <input type="text" id="tarefasAtrasadas">
+            <button id="verificarTarefa">Verificar</button>
+        </div>
+
+        <div id="resultadoTarefas" class="result">A situação da tarefa aparecera aqui</div>
+
+    </section>
+
+    <section class="challenge" id="desafio-6">
+        <h2>Desafio 6 - Login de usuário</h2>
+
+        <div class="control-row">
+            <label for="loginUsuarios">Digite seu nome e sua senha</label>
+            <input type="text" id="loginUsuarios" placeholder="Nome de usuário">
+            <input type="password" id="senhaUsuarios" placeholder="Senha">
+            <button id="btnLogin" type="button">Entrar</button>
+        </div>
+        <div id="resultadoLogin" class="result" aria-live="polite">Seu login aparecerá aqui.</div>
+
+    </section>
+
+    <section class="challenge" id="desafio-7">
+        <h2>Desafio 7 - Ternário</h2>
+
+        <div class="control-row">
+            <label for="numeroTernario">Digite um número</label>
+            <input type="number" id="numeroTernario" placeholder="Ex.: 5">
+            <button id="btnTernario" type="button">Verificar</button>
+        </div>
+        <div id="resultadoTernario" class="result" aria-live="polite">O resultado do ternário aparecerá aqui.</div>
+    </section>
+
+    <section class="challenge" id="desafio-8">
+        <h2>Desafio 8 - Sistema de desconto</h2>
+
+        <div class="control-row">
+            <label for="valorProduto">Digite o valor do produto</label>
+            <input type="number" id="valorProduto" placeholder="Ex.: 100">
+            <button id="btnDesconto" type="button">Calcular desconto</button>
+        </div>
+        <div id="resultadoDesconto" class="result" aria-live="polite">O resultado do desconto aparecerá aqui.</div>
     </section>
 
     <script src="index.js" defer></script>
-    
+
 </body>
+
 </html>
