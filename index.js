@@ -108,3 +108,73 @@ function verificarPrioridade() {
 }
 
 
+const resultado_tarefas = document.getElementById("resultadoTarefas");
+const verificar_tarefas = document.getElementById("verificarTarefa");
+const btn_tarefas = document.getElementById("tarefasAtrasadas");
+const prioridade = "alta"
+const atrasada = true;
+
+btn_tarefas.addEventListener("click", () => {
+    if (prioridade === "urgente" || prioridade === "alta" && atrasada) {
+        resultado_tarefas.textContent = "Precisa de atenção agora!";
+    }
+    else {
+        resultado_tarefas.textContent = "Pode aguardar.";
+    }
+
+})
+
+
+const login_usuarios = document.getElementById("loginUsuarios");
+const senha_usuarios = document.getElementById("senhaUsuarios");
+const btn_login = document.getElementById("btnLogin");
+const resultado_login = document.getElementById("resultadoLogin");
+
+btn_login.addEventListener("click", () => {
+    const login = login_usuarios.value.trim();
+    const senha = senha_usuarios.value.trim();
+
+    if (login === "admin" && senha === "1234") {
+        resultado_login.textContent = "Login realizado com sucesso!";
+    } 
+    else if (login !== "admin" && senha === "1234"){
+        resultado_login.textContent = "Usuario incorretos.";
+    }
+    else {
+        resultado_login.textContent = "Senha incorreta.";
+    }
+})
+
+
+const btnTernario = document.getElementById("btnTernario");
+const inputTernario = document.getElementById("numeroTernario");
+const resultadoTernario = document.getElementById("resultadoTernario");
+
+btnTernario.addEventListener("click", () => {
+    const idade = Number(inputTernario.value); // Exemplo de idade, você pode alterar conforme necessário
+    const situacao = idade >= 18 ? "Você é maior de idade." : "Você é menor de idade.";
+    resultadoTernario.textContent = situacao;
+});
+
+const valorProduto = document.getElementById("valorProduto");
+const btnDesconto = document.getElementById("btnDesconto");
+const resultadoDesconto = document.getElementById("resultadoDesconto");
+
+
+btnDesconto.addEventListener("click", () => {
+    const valor = Number(valorProduto.value);
+    let desconto;
+
+    if (valor >= 500) {
+        desconto = valor * 0.2; // 20% de desconto
+    }
+    else if (valor >= 200 && valor < 500) {
+        desconto = valor * 0.1; // 10% de desconto
+    }
+    else {
+        desconto = 0;
+    }
+    
+
+    resultadoDesconto.textContent = `valor da compra: R$ ${valor.toFixed(2)} - Desconto: R$ ${desconto.toFixed(2)} - Valor final: R$ ${(valor - desconto).toFixed(2)}`;
+});
