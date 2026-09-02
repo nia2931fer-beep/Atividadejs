@@ -8,12 +8,14 @@ body{
     text-align: center;
     align-items: center;
     background-color: midnightblue ;
-    width: min(980px, 92vw);
+    width: 60%;
     margin: 32px auto 52px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
 
 }
-.challenge h1 {
+.challenge h2 {
     font-size: 32px;
     color: wheat;
     margin: 30px 0;
@@ -24,6 +26,10 @@ body{
 }
 .control-row{
     margin: 20px;
+    
+    
+    text-align: center;
+    align-items: center;
 }
 label{
     color: white;
